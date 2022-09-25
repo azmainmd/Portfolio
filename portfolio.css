@@ -1,0 +1,279 @@
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+  }
+  
+header{
+    background-image: url("img/headerimgiphone.jpg") ;
+    text-align: center;
+    margin-bottom: 0;
+    height: 1020px;
+    position: relative;
+    width: 100%;
+}
+#HeaderName > h1{
+    position: absolute;
+    top:45%;
+    left:55%;
+    transform: translate(-50%, -50%);
+    font-size:40px;
+    font-family:'Roboto Slab';
+    color: white;
+} 
+/*#HeaderName > h4{
+    position: absolute;
+    top:50%;
+    left:55%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-family:'Josefin Sans';
+    color: white;
+}*/
+.bottom{
+    position: absolute;
+    bottom:20px;
+}
+.typewriter>h1{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em; /* Adjust as needed */
+    animation: 
+      typing 3s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  /*
+  .typewriter>h4 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation 
+    white-space: nowrap; /* Keeps the content on a single line 
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens 
+    letter-spacing: .15em; /* Adjust as needed 
+    animation: 
+      typing 4s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }*/
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+/*Side NavBar*/
+.sidenav {
+    height: auto;
+    width: 16%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+  }
+  .sidenav a {
+    padding: 20px 6px 2px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #40E0D0;
+  }
+  
+  .sidenav>#logo{
+    color: pink;
+  }
+
+
+
+  .card-img-top {
+    width: 100%;
+    height: 12vw;
+    object-fit: cover;
+}
+
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 4px #FFC0CB;
+}
+  
+  
+  /*Education Section*/
+  #Educ_Exp{
+      background-color: black;
+      text-align: center;
+  }
+  #educH{
+    padding-top: 30px;
+    color: #40E0D0; /*Other color for header- mint- #98ff98 */
+    font-family: 'Montserrat';
+  }
+  .Hobby-icon {
+    display: inline-block;
+    margin: 0 10px;
+    padding-bottom: 50px;
+  }
+  .Hobby-icon:hover{
+    color:#FF647F;
+}
+  /*Skills Section*/
+  #Skills_Work{
+    text-align: center;
+    background-color: black;
+  }
+  #WorkH,#SkillsH{
+    padding-top: 30px;
+    font-family: 'Montserrat';
+    color: #40E0D0;
+    width:100%;
+  }
+  #WorkH2{
+    padding-top: 30px;
+    font-family: 'Montserrat';
+    color: #40E0D0;
+    width:100%;
+  }
+  #SkillsSideBlock{
+    padding-top: 40px;
+  }
+  .skills-icon {
+    display: inline-block;
+    margin: 0 10px;
+    padding-bottom: 50px;
+  }
+  td{
+    padding-right: 2px;
+    padding-left: 2px;
+    color: white;
+  }
+  td> i:hover{
+    color: #40E0D0;
+  }
+  .card{
+    margin-bottom: 80px;
+}
+.card-title{
+  padding-top: 10px;
+}
+.card-block{
+    padding: 10px;
+}
+
+/*Contact*/
+.ContactLink >a{
+  color:#818181
+}
+.ContactLink> a:hover{
+  color: #40E0D0;
+}
+
+  /*ScrollBar*/
+  /* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #40E0D0; 
+  }
+@media only screen and (max-width:767px) and (min-width: 200px){
+  header{
+    background-image: url("img/headerimgmini.jpg") ;
+    width: 100%;
+    height:1100px;
+}
+  .sidenav{
+    width: 30px;
+    height: 0px;
+  }
+}
+
+@media only screen and (min-width:768px){
+    header{
+        background-image: url("img/headerimgipad.jpg") ;
+        height:1100px;
+    }
+    #HeaderName >h1{
+        font-size:70px;
+        left: 50%;
+    }
+    /*#HeaderName>h4{
+        top:53%;
+        left: 50%;
+        font-size:40px ;
+        
+    }*/
+    .bottom{
+        bottom:40px;
+    }
+    .typewriter>h1{
+        animation: 
+      typing 4s steps(40, end),
+      blink-caret .75s step-end infinite;
+    }/*
+    .typewriter>h4{
+        animation: 
+      typing 5s steps(40, end),
+      blink-caret .75s step-end infinite;
+    }*/
+    .sidenav{
+        width:60px;
+    }
+    #educH{
+        padding-top: 80px;
+        font-size: 60px;
+    }
+    .skills-icon{
+      font-size: 15px;
+    }
+}
+
+@media only screen and (min-width:1025px){
+    header{
+        background-image: url("img/headerimglaptop.jpg") ;
+        height:600px;
+    }
+    #HeaderName>h1{
+        font-size:70px ;
+        left:50% ;
+    }/*
+    #HeaderName > h4{
+        top:60%;
+        font-size:40px ;
+        left: 50%;
+    }*/
+    .typewriter>h1{
+        animation: 
+      typing 5s steps(40, end),
+      blink-caret .75s step-end infinite;
+    }/*
+    .typewriter>h4{
+        animation: 
+      typing 6.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+    }*/
+    .sidenav{
+        height:100%;
+        width:60px;
+    }
+    #educH{
+        font-size: 30px;
+    }
+    #logo{
+      padding-bottom: 15px;
+    }
+}
+
